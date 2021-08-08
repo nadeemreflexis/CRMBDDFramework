@@ -89,7 +89,8 @@ public class CRMStepDefinition2 {
 		WebElement checkbox=driver.findElement(By.xpath("//form[@id='vContactsForm']/table/tbody/tr/td[2]/a[contains(text(),'"+contact+"')]/"
 				+ "parent::td/parent::tr/td/input"));
 		checkbox.click();
-		Assert.assertTrue(checkbox.isSelected());
+		boolean flag = checkbox.isSelected();
+		Assert.assertTrue(flag);
 	  
 	}
 	
